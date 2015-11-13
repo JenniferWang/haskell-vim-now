@@ -31,10 +31,10 @@ set tm=2000
 noremap ,, ,
 
 " Use par for prettier line formatting
-set formatprg="PARINIT='rTbgqR B=.,?_A_a Q=_s>|' par\ -w72"
+" set formatprg="PARINIT='rTbgqR B=.,?_A_a Q=_s>|' par\ -w72"
 
 " Use stylish haskell instead of par for haskell buffers
-autocmd FileType haskell let &formatprg="stylish-haskell"
+" autocmd FileType haskell let &formatprg="stylish-haskell"
 
 " Find custom built hasktags, codex etc
 let $PATH = $PATH . ':' . expand("~/.local/bin")
@@ -87,7 +87,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 
 " Haskell
 Plugin 'neovimhaskell/haskell-vim'
-Plugin 'enomsg/vim-haskellConcealPlus'
+" Plugin 'enomsg/vim-haskellConcealPlus'
 Plugin 'eagletmt/ghcmod-vim'
 Plugin 'bitc/vim-hdevtools'
 Plugin 'eagletmt/neco-ghc'
@@ -231,7 +231,7 @@ set encoding=utf8
 set ffs=unix,dos,mac
 
 " Use large font by default in MacVim
-set gfn=Monaco:h19
+" set gfn=Monaco:h19
 
 " }}}
 
@@ -283,9 +283,9 @@ set si "Smart indent
 set wrap "Wrap lines
 
 " Pretty unicode haskell symbols
-let g:haskell_conceal_wide = 1
-let g:haskell_conceal_enumerations = 1
-let hscoptions="𝐒𝐓𝐄𝐌xRtB𝔻w"
+" let g:haskell_conceal_wide = 1
+" let g:haskell_conceal_enumerations = 1
+" let hscoptions="𝐒𝐓𝐄𝐌xRtB𝔻w"
 
 " Copy and paste to os clipboard
 nmap <leader>y "*y
@@ -295,7 +295,7 @@ vmap <leader>d "*d
 nmap <leader>p "*p
 vmap <leader>p "*p
 
-" }}}
+" zo}}}
 
 " Visual mode related {{{
 
@@ -598,9 +598,9 @@ let g:necoghc_enable_detailed_browse = 1
 au FileType haskell let g:ghcmod_use_basedir = getcwd()
 
 " Type of expression under cursor
-nmap <silent> <leader>ht :GhcModType<CR>
+"nmap <silent> <leader>ht :GhcModType<CR>
 " Insert type of expression under cursor
-nmap <silent> <leader>hT :GhcModTypeInsert<CR>
+"nmap <silent> <leader>hT :GhcModTypeInsert<CR>
 " GHC errors and warnings
 nmap <silent> <leader>hc :SyntasticCheck hdevtools<CR>
 
